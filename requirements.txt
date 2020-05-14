@@ -1,0 +1,13 @@
+webpack
+  babel
+  scss
+  eslint
+  2 modes
+    -dev
+    devServer,SourceNNap, Eslint, js & css
+    -prod
+      minified Code
+git
+  prod
+    
+  dev

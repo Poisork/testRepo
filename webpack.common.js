@@ -1,6 +1,5 @@
 const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpackTools = require('./webpackTools.js');
@@ -25,9 +24,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'public/index.html'),
-    }),
     new CopyPlugin([
       {
         from: path.resolve(__dirname, 'public/favicon.ico'),

@@ -15,7 +15,7 @@ module.exports = {
     extensions: ['.js'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@core': path.resolve(__dirname, 'src/core'),
+      '@core': path.resolve(__dirname, 'src', 'core'),
     },
   },
   devServer: {
@@ -26,7 +26,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin([
       {
-        from: path.resolve(__dirname, 'public/favicon.ico'),
+        from: path.resolve(__dirname, 'public', 'favicon.ico'),
         to: path.resolve(__dirname, 'build'),
       },
     ]),
